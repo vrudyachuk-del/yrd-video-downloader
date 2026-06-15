@@ -1,0 +1,8 @@
+# ВИДЕОССЫЛКИ ДЛЯ СКАЧИВАНИЯ
+# Формат: НАЗВАНИЕ|ВИДЕОССЫЛКА|МОДУЛЬ_КОД
+# Модули: 01=Планирование, 02=Маркетинг, 03=Маркетинг, 04=Оцифровка, 05=Закупка, 06=Выбор_ниши, 07=Команда, 08=Ozon, 09=Доп
+
+# ПРИМЕР (раскомментируй и замени ссылку):
+# 01_Практикум_по_планированию|https://api1.gcvh.ru/api/playlist/media/45dfa5c96f5e24ffb4f91ab7a5207ce6/6a0b4cc678ce7776e529ab4fc42373fc/1080?consumer=vod&sid=&user-cdn=gcore&version=51%3A2%3A1%3A0%3Agcore&user-id=476956072&plck=mdcc1fafa61fdfb392a77eddea3d4348c9&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyLWlkIjo0NzY5NTYwNzJ9.3nKY8vb8C7Nr8EdyERT0jCdb5YeMywjpY1PslC0IAk8|01
+
+# ДОБАВЛЯЙ СВОИ ВИДЕО ЗДЕСЬ (каждое на новой строке):
