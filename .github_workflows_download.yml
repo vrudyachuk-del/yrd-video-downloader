@@ -1,0 +1,39 @@
+name: Скачать видео ЯРД 2.0
+
+on:
+  # Запускать каждый день в 1:00 AM UTC (4:00 AM Moscow)
+  schedule:
+    - cron: '0 1 * * *'
+
+  # Или запустить вручную кнопкой
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install yt-dlp requests
+
+      - name: Download and upload videos
+        env:
+          YANDEX_TOKEN: ${{ secrets.YANDEX_TOKEN }}
+        run: python download_final.py
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: download-logs
+          path: yrd_*.log
